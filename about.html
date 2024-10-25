@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/aboutstyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cut the Cord - About Us</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <img src="images/logo.png" alt="Cut the Cord Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mice.html">Mice</a></li>
+                <li><a href="keyboards.html">Keyboards</a></li>
+                <li><a href="headphones.html">Headphones</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h1>About Cut the Cord</h1>
+        <div class="about-content">
+            <div class="about-logo">
+                <img src="images/logo-colossal.png" alt="Cut the Cord Logo">
+            </div>
+            <div class="about-text">
+                <h2>Our Mission</h2>
+                <p>Technology is ever-evolving, and we're here to enlighten you with the latest and most budget-friendly, high-quality devices as we scour new products each week. Gone are the days of needing dongles and cables hanging around, turning our tidy spaces into what looks like a spaghetti monster's fever dream. To help you out, we have selected the best wireless gadgets. The best options for every need, no endless scrolling.</p>
+                <p>Cut the Cords is here to free you from tussling cables and cords. Almost the Wire Cutters of your locality sans getting arrested for destroying public property. These three categories cover the full spectrum of your wireless tech needs: from typing to navigating and enjoying high-quality audio.</p>
+                <p>Whether you are a tech guru who basically dreams in 0s and 1s, or one of those people who still believes that Bluetooth is a dental condition, Cut the Cords has to be your cordless paradise! Here to guide you through the wireless woods without tripping up on your virtual shoelaces.</p>
+                <p>With that said, do yourself a favor, stop by and get involved in the wireless revolution. Friends do not let friends use wires, after all.</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2024. Jaren Kendrick Yambao. All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    
+        
+        document.addEventListener('click', function(event) {
+            const navContent = document.querySelector('.nav-content');
+            const menuToggle = document.querySelector('.menu-toggle');
+            if (!navContent.contains(event.target) || event.target === menuToggle) {
+                document.querySelector('nav ul').classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
